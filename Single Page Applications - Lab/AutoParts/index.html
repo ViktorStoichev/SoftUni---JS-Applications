@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Furniture Demo</title>
+    <link rel="stylesheet" href="site.css">
+    <script type="module" src="src/app.js"></script>
+</head>
+<body>
+    <nav>
+        <a id="home-nav" href="/">Home</a>
+        <a id="catalog-nav" href="/catalog">Catalog</a>
+        <a id="create-nav" href="/create">Create</a>
+        <a id="login-nav" href="/login">Login</a>
+        <a id="register-nav" href="/register">Register</a>
+    </nav>
+
+    <section id="home">
+        <h1>Welcome to Na Viktorcho Mebelite!</h1>
+        <p>Browse a wide selection of quality furniture for your house needs!</p>
+        <p><a id="catalog-link" href="/catalog">Open Catalog</a></p>
+    </section>
+
+    <section id="catalog">
+        <h1>Furniture Catalog</h1>
+        <ul id="furniture">
+            <p>Loading &hellip;</p>
+        </ul>
+    </section>
+
+    <section id="details">
+        <h1>Furniture Details</h1>
+        <h2>Loading &hellip;</h2> <!-- Furniture label -->
+        <p class="price">Loading &hellip;</p> <!-- Furniture price -->
+        <p class="description">Loading &hellip;</p> <!-- Furniture description -->
+        <p class="year">Loading &hellip;</p> <!-- Furniture year -->
+        <p class="material">Loading &hellip;</p> <!-- Furniture material -->
+    </section>
+
+    <section id="login">
+        <h1>Login</h1>
+        <form>
+            <label>Email: <input type="text" name="email"></label>
+            <label>Password: <input type="password" name="password"></label>
+            <button>Sign in</button>
+            <p>Don't have an account? <a id="register-link" href="/register">Register here</a></p>
+        </form>
+    </section>
+
+    <section id="register">
+        <h1>Register</h1>
+        <form>
+            <label>Email: <input type="text" name="email"></label>
+            <label>Password: <input type="password" name="password"></label>
+            <label>Repeat: <input type="rePass" name="rePass"></label>
+            <button>Sign in</button>
+            <p>Already have an account? <a id="login-link" href="/login">Login here</a></p>
+        </form>
+    </section>
+
+    <section id="create">
+        <h1>Create new furniture</h1>
+        <form>
+            <label>Make: <input type="text" name="make"></label>
+            <label>Model: <input type="text" name="model"></label>
+            <label>Price: <input type="text" step="0.01" name="price"></label>
+            <label>Description: <textarea name="description"></textarea></label>
+            <label>Year: <input type="text" step="1" name="year"></label>
+            <label>Material: <input type="text" name="material"></label>
+            <button>Publish</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>Copyright &copy; 2024 Viktor Stoichev</p>
+    </footer>
+</body>
+</html>

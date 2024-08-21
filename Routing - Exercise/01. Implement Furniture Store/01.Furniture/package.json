@@ -1,0 +1,24 @@
+{
+  "name": "01.furniture",
+  "version": "1.0.0",
+  "main": "index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "mocha tests",
+    "start": "http-server -a localhost -p 3000 -P http://localhost:3000? -c-1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "lit-html": "^3.1.4",
+    "page": "^1.11.6",
+    "chai": "^4.4.1",
+    "http-server": "^0.12.3",
+    "mocha": "^8.4.0",
+    "playwright-chromium": "^1.45.1"
+  }
+}
